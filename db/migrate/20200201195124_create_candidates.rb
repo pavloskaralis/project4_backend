@@ -2,7 +2,6 @@ class CreateCandidates < ActiveRecord::Migration[6.0]
   def change
     create_table :candidates do |t|
       t.string :name
-      t.string :image
       t.integer :january
       t.integer :february
       t.integer :march
@@ -15,7 +14,7 @@ class CreateCandidates < ActiveRecord::Migration[6.0]
       t.integer :october
       t.integer :november
       t.integer :december
-
+      t.string :img
       t.timestamps
     end
   end

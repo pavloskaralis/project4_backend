@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 2020_02_08_005111) do
 
   create_table "candidates", force: :cascade do |t|
     t.string "name"
-    t.string "image"
     t.integer "january"
     t.integer "february"
     t.integer "march"
@@ -30,6 +29,7 @@ ActiveRecord::Schema.define(version: 2020_02_08_005111) do
     t.integer "october"
     t.integer "november"
     t.integer "december"
+    t.string "img"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
